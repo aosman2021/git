@@ -1,5 +1,5 @@
-#!/bin/bash
-$1=$MSG
+#!/bin/zsh
+read -p "Enter commit message : " MSG
 ### GitHub Upload
 eval `ssh-agent -s`
 ssh-add ~/.ssh/id_rsa
